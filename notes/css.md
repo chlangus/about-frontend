@@ -1,3 +1,6 @@
+## box-sizing: border-box
++ content, 패딩, 마진값을 합해서 크기를 조
+
 ## RGBA
 + RGB 표기에다가 불투명도(Alpha)를 추가한 것
 + 불투명도는 0 ~ 1 사이의 소수점 숫자
