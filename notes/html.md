@@ -1,4 +1,5 @@
-## 경로사용
+## HTML
++ Hipertext Markup Language의 약
 
 ## thead, tbody, tr, th, td, tfoot, border-collapse, border-spacing
 
