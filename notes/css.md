@@ -30,7 +30,11 @@
 
 ## letter-spacing, word-spacing
 + 글자 사이의 간격 조정할때는 letter-spacing: px; 로 사용
-+ 단어 사이의 간격 조정 시 word-spacing 사용 
++ 단어 사이의 간격 조정 시 word-spacing 사용
+## position
++ static: 기본값, 일반적인 글의 흐름을 따름
++ relative: static의 위치를 기준으로 움직임, 원래 위치는 비어져 있음
++ absolute: 포지셔닝된 가장 가까운 조상요소를 기준으로 움직임, 원래 위치에 자리를 차지하지 않음 inset:0은 top, right, bottom, left 모두 0으로 설정
 ## >(자식 결합자)와 ' '(자손결합자)
 + 클래스의 이름이 겹칠 때 구분 짓기 위해 사용
 + 부모 클래스 > 자식 클래스 .parent > .son
