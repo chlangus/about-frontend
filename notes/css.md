@@ -50,7 +50,14 @@
 + 숫자가 클 수록 위에 위치
 + 쌓임맥락으로 인해 부모의 z-index가 1이고 자식의 z-index가 3이어도 밑에 있는 태그의 z-index가 2라면 부모와 자식 둘 다 우선순위가 낮음 즉 부모의 z-index를 따라감
 
-
-## Modal 창 만드는 방법
+## flex-box
++ display: flex;
++ 기본값: row 즉 가로로 겹겹이 쌓임
++ flex-direction: row, row-reverse, column, column-reverse
++ justify-content: 기본축의 간격 및 위치 설정
++ align-items: 교차축의 간격 및 위치 설장
++ flex-wrap: wrap; 넘치는 요소를 다음줄에 보여줌
++ flex-grow: 1, flex-shrink: 0 
++ ## Modal 창 만드는 방법
 + div 태그를 하나 만들어 display: absolute, top: 0, left: 0, width: 100%, height: 100%로 
 + 하여 배경을 만들어준다.
