@@ -57,7 +57,10 @@
 + justify-content: 기본축의 간격 및 위치 설정
 + align-items: 교차축의 간격 및 위치 설장
 + flex-wrap: wrap; 넘치는 요소를 다음줄에 보여줌
-+ flex-grow: 1, flex-shrink: 0 
-+ ## Modal 창 만드는 방법
-+ div 태그를 하나 만들어 display: absolute, top: 0, left: 0, width: 100%, height: 100%로 
-+ 하여 배경을 만들어준다.
++ flex-grow: 1, flex-shrink: 0
+
+## grid 
++  grid-template-columns: 100px 300px 100px; : 각 컬럼의 너비
++  grid-template-rows: 200px 200px 100px : 각 row의 높이
++  repeat(3, minmax(200px, 300px)) 3번 200px에서 300px까지 늘어남
++  grid-auto-rows/colums : 자동으로 행이나 열의 크기 지정 
