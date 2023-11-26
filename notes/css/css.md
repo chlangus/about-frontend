@@ -46,10 +46,6 @@
 + 부모 클래스 > 자식 클래스 .parent > .son
 + 부모 클래스 ' ' 자손 클래스 ex) .parent .son
 
-## z-index
-+ 숫자가 클 수록 위에 위치
-+ 쌓임맥락으로 인해 부모의 z-index가 1이고 자식의 z-index가 3이어도 밑에 있는 태그의 z-index가 2라면 부모와 자식 둘 다 우선순위가 낮음 즉 부모의 z-index를 따라감
-
 ## flex-box
 + display: flex;
 + 기본값: row 즉 가로로 겹겹이 쌓임
