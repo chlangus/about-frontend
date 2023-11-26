@@ -34,6 +34,10 @@
 + 글자 사이의 간격 조정할때는 letter-spacing: px; 로 사용
 + 단어 사이의 간격 조정 시 word-spacing 사용
 
+## z-index
++ 숫자가 클 수록 위에 위치
++ 쌓임맥락으로 인해 부모의 z-index가 1이고 자식의 z-index가 3이어도 밑에 있는 태그의 z-index가 2라면 부모와 자식 둘 다 우선순위가 낮음 즉 부모의 z-index를 따라감
+
 ## position
 + static: 기본값, 일반적인 글의 흐름을 따름
 + relative: static의 위치를 기준으로 움직임, 원래 위치는 비어져 있음
