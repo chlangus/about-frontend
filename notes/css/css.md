@@ -1,5 +1,5 @@
 ## CSS
-+ Cascading Style Sheet
++ Cascading Style Sheet의 약자로 웹페이지의 스타일을 정의하는데 사용됨 
 + 개발자도구에서 위에있는것이 아래것을 덮어 씀
 + 이름이 같다면 나중에 쓰인 것이 우선
 + 선택자 명시도에 따라 우선순위 다름
@@ -60,7 +60,10 @@
 + flex-grow: 1, flex-shrink: 0
 
 ## grid 
-+  grid-template-columns: 100px 300px 100px; : 각 컬럼의 너비
-+  grid-template-rows: 200px 200px 100px : 각 row의 높이
-+  repeat(3, minmax(200px, 300px)) 3번 200px에서 300px까지 늘어남
-+  grid-auto-rows/colums : 자동으로 행이나 열의 크기 지정 
++ grid-template-columns: 100px 300px 100px; : 각 컬럼의 너비
++ grid-template-rows: 200px 200px 100px : 각 row의 높이
++ repeat(3, minmax(200px, 300px)) 3번 200px에서 300px까지 늘어남
++ rid-auto-rows/colums : 자동으로 행이나 열의 크기 지정 
+
+## border
++ border-collapse, border-spacing 차이
