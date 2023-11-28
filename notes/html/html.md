@@ -1,11 +1,11 @@
 ## HTML
-+ Hipertext Markup Language의 약
++ Hipertext Markup Language의 약자로 웹페이지의 기본 틀을 구성하는 역할 
 
-## thead, tbody, tr, th, td, tfoot, border-collapse, border-spacing
+## table 태그
++ thead, tbody(tr, th, td), tfoot
 
-## border-collapse, border-spacing 차이
-
-## form 태그의 데이터를 전송할때 name 속성으로 보내줌
+## form 태그
++ 데이터 전송 시 name의 값을 지정해 주어야 데이터 전송 가능 
 
 ## 시멘틱 태그 
 + div와 기능이 완전히 같다
