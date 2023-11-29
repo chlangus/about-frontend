@@ -17,9 +17,11 @@ git의 영역은 3가지가 존재
 ### git의 상태
 git으로 관리되는 파일은 일종의 `상태` 를 가짐   
 일반 파일들은 `Untracked` `Tracked` 두개의 상태를 가지게 되고 `Tracked` 상태는 다시 세개의 `상태`를 가지게 됨   
-> `Untracked`: 파일을 새로 생성한 뒤 한번도 git add 해 주지 않았다면 이 상태   
-
+> `Untracked`: 파일을 새로 생성한 뒤 한번도 git add 해 주지 않은 상태   
+>   
 > `Tracked`: git add를 하고 나서 git에 의해 파일의 변동사항이 추적되고 있는 상태   
->> `Staged`: 파일을 수정하고 나서 git add를 하면 이 상태   
->> `Unmodified`: 현재 파일의 내용이 최신 커밋의 내용과 차이가 없을때 그 파일은 Unmodified 상태, 커밋을 하고 난 working directory 안의 모든 파일들은 이 상태가 됨   
->> `Modified`: 최신 커밋의 내용과 비교했을때 바뀐 내용이 있다면 Modified 상태       
+>> `Staged`: 파일을 새로 생성하거나 수정하고 난 후 git add를 한 상태
+>> `Unmodified`: 현재 파일의 내용이 최신 커밋의 내용과 차이가 없을때 그 파일은 Unmodified 상태, 커밋을 하고 난 working directory 안의 모든 파일들의 상태 
+>> `Modified`: 최신 커밋의 내용과 비교했을때 바뀐 내용이 있다면 Modified 상태
+>
+> ![image](https://github.com/chlangus/about-frontend/assets/139041897/b1609d39-5868-4bc5-a0fa-38166b4dbd0a)
