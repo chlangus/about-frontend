@@ -21,6 +21,8 @@
 
 ## background-image: linear-gradient(rgba(), rgba())
 + 앞의 색에서 뒤의 색으로 기본설정인 위에서 아래로 색이 바뀌는것으로 설정
+<br>
+
 ## em과 rem
 + 1em은 부모 태그의 font-size
 + 1rem은 최상위 태그(html 태그)의 font-size   
