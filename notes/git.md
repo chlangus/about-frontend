@@ -38,5 +38,9 @@ git으로 관리되는 파일은 일종의 `상태` 를 가짐
   > reset의 옵션 세가지    
   > ![image](https://github.com/chlangus/frontend-note/assets/139041897/8debdd5d-d39f-42dc-9cfb-92736fc7e757)   
 + `git tag` + `태그name` + `커밋id`: 커밋id에 태그를 달아줌
-+ `git branch` + `브랜치name`: `git branch`만 사용할 경우 새 브랜치를 생성
-+ 
++ `git branch` + `[option]` + `[브랜치name]`:   
+  +  `git branch`만 사용할 경우 브랜치 목록 출력   
+  +  `git branch` + `[브랜치name]`을 사용할 경우 새로운 브랜치를 생성   
+  +  `option`에 `-d`를 사용하면 그 브랜치 삭제, `-b` 옵션을 사용 할 경우 브랜치를 생성 후 바로 이동    
++ `git checkout 브랜치name`: 브랜치로 이동 
++ `git merge` + `브랜치name`: 현재 위치의 브랜치에 브랜
