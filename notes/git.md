@@ -41,6 +41,11 @@ git으로 관리되는 파일은 일종의 `상태` 를 가짐
 + `git branch` + `[option]` + `[브랜치name]`:   
   +  `git branch`만 사용할 경우 브랜치 목록 출력   
   +  `git branch` + `[브랜치name]`을 사용할 경우 새로운 브랜치를 생성   
-  +  `option`에 `-d`를 사용하면 그 브랜치 삭제, `-b` 옵션을 사용 할 경우 브랜치를 생성 후 바로 이동    
-+ `git checkout 브랜치name`: 브랜치로 이동 
-+ `git merge` + `브랜치name`: 현재 위치의 브랜치에 브랜
+  +  `option`에 `-d`를 사용하면 그 브랜치 삭제 
++ `git checkout` + `브랜치name`: 브랜치로 이동   
+  +  `-b` 옵션을 사용 할 경우 브랜치를 생성 후 바로 이동   
++ `git merge` + `브랜치name`: 현재 위치의 브랜치에 대상 브랜치 합치기   
+  +  브랜치끼리 conflict가 발생 시 파일로 가서 수정할 내용을 고친 후 커밋
+  +  `git merge` + `--abort` 커맨드 실행 시 merge하기 전 상태로 돌아옴
+  
+    
