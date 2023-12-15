@@ -74,12 +74,28 @@
 <br>
 
 ## 옵셔널 체이닝
-- `user.cat?.name` : user.cat의 값이 undefined나 null이라면 undefined를 반환 값이 존재한다면 name의 값을 반환 
+- `user.cat?.name` : user.cat의 값이 undefined나 null이라면 undefined를 반환, 값이 존재한다면 name의 값을 반환 
 <br>
 
 ## 구조 분해 (Destructuring)
 - `const rank = ['a', 'b', 'c', 'd']`
 - `const [A,B,C,D] = rank` :  순서대로 앞에서부터 변수에 값이 할당이 됨, 길이가 넘치더라도 순서가 일치하는 것들만 할당 나머지를 가져오려면 `...변수`를 사용하여 rest Paremeter 사용, 변수에 default값도 사용 가능
 - `[A,B] = [B,A]` : 이 구문을 사용하여 따로 변수를 사용하지 않고 swap이 가능
-- 객체를 구조분해 할때는 `const { 프로퍼티1, 프로퍼티2 } = 객체` 이렇게 사용하며 객체에 있는 프로퍼티와 동일한 이름이 있다면 할당을 해주게 되며, 없는 프로퍼티라면 undefined가 할당된다.
-- 객체 구조분해에서 다른이름으로 할당하고싶다면 `프로퍼티1: 바꾸고싶은프로퍼티이름` 으로 사용하면 됨 
+- 객체를 구조분해 할때는 `const { 프로퍼티1, 프로퍼티2 } = 객체` 이런식으 사용하며 객체에 있는 프로퍼티와 동일한 이름이 있다면 할당을 해주게 되며, 없는 프로퍼티라면 undefined가 할당된다.
+- 객체 구조분해에서 다른이름으로 할당하고싶다면 `프로퍼티1: 바꾸고싶은프로퍼티이름` 으로 사용하면 됨
+- 사용하고 싶은 객체만 `{ 프로퍼티 }`를 사용하여 가져와 사용이 가능 
+
+## 에러 다루기(Exception Handling)
+- `new TypeError('타입 에러가 발생했습니다.')` : 에러 생성, `error.name` : 에러타입, `error.message` : 에러 내용
+- `throw error` : 에러 생성
+- `try {} catch (error) {} finally {}` : try 문에서 에러가 발생한다면 catch문을 실행, 에러 발생 이후의 코드는 실행되지 않음 catch 문이 실행되고 나서 finally의 코드를 마저 실행하게 됨
+
+## forEach와 map
+- `members.forEach(function (member, index, arr) {})` : 첫번째 변수에 members의 값이 하나씩 전달, 마지막 arr는 members를 반환
+- forEach는 메서드를 호출할때 argument를 callback함수로 작성을 해주게 되면 파라미터로 객체의 프로퍼티를 순서대로 전달하게 됨 그래서 파라미터가 반드시 하나 작성되어야 함
+- 배열의 길이가 중간에 늘어나도 원래의 길이만큼 반복, 배열의 길이가 줄어들게되면 줄어든 길이에 따라 반복 
+- map은 forEach와 같지만 값을 return한다는것이 차이 
+
+## filter와 find 
+- `const apples = devices.filter((el) => el.brand === 'Apple')` : filter는 조건에 맞는 값을 return하여 새로운 객체를 만듦
+- find는 filter와 같은 방식으로 사용하지만 조건의 맞는 맨 앞의 값만 return 
