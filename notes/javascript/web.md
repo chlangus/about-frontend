@@ -84,7 +84,9 @@ response에 `Head`와 `Body`가 존재, Head는 Response에 대한 부가 정보
 - then() 메서드를 가짐, Promise객체가 fulfilled 상태가 되었을때 실행할 콜백함수를 등록
 - then메서드의 return값이 프로미스 객체라면 then메서드의 상태는 then메서드의 return값을 따라감
 - then메서드의 return값이 프로미스 객체가 아니라면 then메서드의 상태는 fulfilled상태가 됨
-  
+- .text(), .json메서드도 Promise객체를 리턴
+- 프로미스 체이닝은 비동기작업을 순서대로 실행하기 위해 사용, 비동기 작업이 많더라도 깔끔하게 처리 가능 
+- then 메서드의 두번째 인자는 작업 상태가 rejected 됐을때의 결과값 반
 <br>
 
 
