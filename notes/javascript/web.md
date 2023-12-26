@@ -64,7 +64,7 @@ response에 `Head`와 `Body`가 존재, Head는 Response에 대한 부가 정보
 <br>
 
 ## fetch 함수
-- fetch함수는 Promise 객체를 리턴
+- fetch함수는 Ajax 통신을 하는 함수이며, Promise 객체를 리턴
 - 이 객체의 then 메소드로, '응답이 왔을 때 실행할 콜백'을 등록할 수 있다.
 - 등록된 콜백들은 then메소드로 등록한 순서대로 실행되고, 이때 이전 콜백의 리턴값을 이후 콜백이 넘겨받아서 사용할 수 있음
 - 바로 리스폰스를 사용할 수 없고 이 응답에 대한 처리를 따로 해주어야 데이터를 선별하여 사용할 수 있음
@@ -86,7 +86,31 @@ response에 `Head`와 `Body`가 존재, Head는 Response에 대한 부가 정보
 - then메서드의 return값이 프로미스 객체가 아니라면 then메서드의 상태는 fulfilled상태가 됨
 - .text(), .json메서드도 Promise객체를 리턴
 - 프로미스 체이닝은 비동기작업을 순서대로 실행하기 위해 사용, 비동기 작업이 많더라도 깔끔하게 처리 가능 
-- then 메서드의 두번째 인자는 작업 상태가 rejected 됐을때의 결과값 반
+- then 메서드의 두번째 인자는 작업 상태가 rejected 됐을때의 결과값 반환
+- catch 메서드는 then메서드의 두번째 파라미터를 다루는 메서드
+- 아무런 콜백도 실행되지 않을때 이전 Promise 객체와 동일한 상태와 결과를 갖게 됨
+- 일반적으로 catch 메서드는 마지막에 쓰지만 중간에 사용되어 결과를 뒤에 넘겨줄 수 있다면 중간에도 사용된다.
+- finally 메서드는 무조건 실행됨
+- 비동기 실행 함수를 Promise 객체로 감싸서 그 Promise 객체를 리턴하는 형식으로 만드는 작업을 Promisify라고 한다
+- Promisify를 하는 이유는 비동기 실행 함수의 콜백이 리턴하는 값을 Promise Chain에서 사용하고 싶을 때
+- `new Promise((resolve, reject)=> {resolve(data)})` : 프로미스 객체 생성 resolve는 fulfilled시 반환값, reject는 reject시 반환값
+- 콜백이 딱 한번만 실행되는 함수인 경우에만 Promisify를 해야 한다. Promise객체의 상태및 결과는 고정되면 바뀌지 않음
+- all 메서드로 모든 Promise 객체를 가져올 수 있음
+- race 메서드는 가장 빨리 값과 상태가 결정되는 Promise객체를 선택하는 메서드 
 <br>
 
+## axios
+- 모든 리퀘스트, 리스폰스에 대한 공통 설정 및 공통된 전처리 함수 삽입 가능
+- serialization, deserialization를 자동으로 수행
+- 특정 리퀘스트에 대해 아임아웃 설정 가능
+- 업로드 시 진행 상태 정보 얻을 수 있음
+- 리퀘스트 취소 기능 존재 
+<br>
 
+## async/await
+- async는 함수 안에 비동기 적으로 실행되는 부분이 있다는것을 의미 
+- await는 Promise 객체를 반환하는 코드 앞에 붙임, 이 코드를 만나면 함수 바깥으로 실행 흐름이 넘어가며, 함수안은 await 붙은 코드가 실행될때까지 기다린 후에 다음 코드 라인 실행
+- await는 async가 붙어있는 함수 안에서만 사용 가능
+- 기존 Promise객체를 사용하는 코드를 개발자가 더 편하게 작성할 수 있도록 하고 코드의 가독성을 높이기 위해서 도입됨
+- async 함수는 항상 Promise 객체를 리턴
+- async 함수 안에서 async함수 앞에 await를 붙여 사용 가능 
