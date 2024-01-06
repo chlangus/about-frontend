@@ -18,6 +18,13 @@ Virtual DOM은 DOM의 상태를 메모리에 저장하고, 변경 전과 변경 
 <br>
 
 ## jsx
-- 태그 속성인 class는 html 문법과 겹치게 되므로 className, for는 htmlFor 그리고 속성의 이름은 camel case로 작성야 함
+- 태그 속성인 class는 javascript 문법과 겹치게 되므로 className, for는 htmlFor 그리고 속성의 이름은 camel case로 작성해야 함
 - 태그는 하나의 태그로 감싸주어야 한다. 불필요한 태그로 감싸주지 않기 위해 `<Fragment>` 태그로 감싸줄 수 있으면 이것을 줄인 축약형 태그가 `<>` 이다.
 - 실행될 때 javascript로 변환되어 실행되므로 javascript 문법 사용 가능, `{}` 안에 표현식을 사용해 주면 됨
+- 리액트 컴포넌트의 이름음 첫글자를 대문자로 작성해야 함 
+
+## props
+- 컴포넌트에 지정한 속성을 props라고 함
+- 컴포넌트에서 구조분해 할당으로 특정prop값 가져올수 있음
+- 아무 변수로 모든 prop값 객체로 가져옴
+
