@@ -12,3 +12,8 @@
 5. AST를 바이트코드로 변환
 6. 런타임이 바이트코드를 평가
 1 ~ 3은 TSC가수행하며, 4~6은 브라우저, NodeJS, 기타 자바스크립트 엔진 등에서 수행한다. 
+<br>
+
+## 타입 정하기
+- `let size: number = 100` 이처럼 변수의 뒤에 :number처럼 작성하여 타입 지정
+- 기본형 타입: `string`, `number`, `boolean`, `undefined`, `null`
