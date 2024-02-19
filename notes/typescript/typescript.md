@@ -34,4 +34,25 @@
 <br>
 
 ## interface
-- `interface Name{ id: string, name: string }` 이처럼 사용하며 extends를 사용하여 상속이 가능함 
+- `interface Name{ id: string, name: string }` 이처럼 사용하며 extends를 사용하여 상속이 가능함    
+<br>
+
+## 리터럴 타입
+- 리터럴 타입은 타입으로 설정된 리터럴 값만 값으로 받음    
+<br>
+
+## 타입 별칭
+- `list: string[]` 이렇게 쓰는 대신 `type List = string[]`타입별칭을 지어주어 `list: List` 이렇게 중복되는 타입을 좀 더 간단하게 사용할 수 있음   
+<br>
+
+## Union, intersection 타입
+- `string | number` 을 사용하면 둘중 하나의 타입을 갖게 됨   
+- `string & number` 을 사용하면 타입을 합칠수 있음   
+<br>
+
+## keyof
+- `keyof Product` 로 써주면 Product interface에 있는 키값의 타입을 Union으로 써준것처럼 작동   
+<br>
+
+## generic
+- 생성 시점에 타입을 명시하여 하나의 타입만이 아닌 다양한 타입을 사용할 수 있도록 하는 기법 
