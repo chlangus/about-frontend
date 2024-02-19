@@ -11,7 +11,7 @@
 4. 자바스크립트 소스를 자바스크립트 AST로 변환
 5. AST를 바이트코드로 변환
 6. 런타임이 바이트코드를 평가
-1 ~ 3은 TSC가수행하며, 4~6은 브라우저, NodeJS, 기타 자바스크립트 엔진 등에서 수행한다. 
+1 ~ 3은 TSC가수행하며, 4~6은 브라우저, NodeJS, 기타 자바스크립트 엔진 등에서 수행한다.    
 <br>
 
 ## 타입 정하기
@@ -21,12 +21,17 @@
 - 튜플 타입: `[string, string]`
 - 객체 타입: `{ id: string; name: string; ...}`, property 개수를 알 수 없을때 `{ [id: string]: number; }` 이런 방식으로 사용
 - `any` 모든 타입에 지정가능하지만 불가피한 상황이 아니면 타입스크립트 사용하는 이유가 없어지지 않게, 사용하지 않아야 함 
-- `{ name: 'son' } as { name: string} `처럼 as를 사용하여 타입을 정해주는것도 가능
+- `{ name: 'son' } as { name: string} `처럼 as를 사용하여 타입을 정해주는것도 가능   
+<br>
 
 ## 함수 타입 정하기
 - `function func(id: string, quantity?: number): string{}` 이처럼 변수 옆에 :string 이렇게 타입 지정 그리고 ?:를 사용해 값이 없을때도 지정해 줌, return값의 타입은 함수이름과 옆에 :string 이렇게 사용
-- 함수 안에 있는 메서드의 타입은 `funcInfunc : (id: string, quantity?: number) => boolean;` => 뒤에 반환값 타입을 지정해줌
+- 함수 안에 있는 메서드의 타입은 `funcInfunc : (id: string, quantity?: number) => boolean;` => 뒤에 반환값 타입을 지정해줌   
+<br>
 
 ## Enum
-- `enum Size{ S, M, L, XL }` 이처럼 사용하며, 값을 주지 않으면 0부터 시작한다. `S = 'S'` 이렇게 값을 줄 수 있음
-=
+- `enum Size{ S, M, L, XL }` 이처럼 사용하며, 값을 주지 않으면 0부터 시작한다. `S = 'S'` 이렇게 값을 줄 수 있음   
+<br>
+
+## interface
+- `interface Name{ id: string, name: string }` 이처럼 사용하며 extends를 사용하여 상속이 가능함 
