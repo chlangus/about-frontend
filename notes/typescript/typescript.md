@@ -26,4 +26,7 @@
 ## 함수 타입 정하기
 - `function func(id: string, quantity?: number): string{}` 이처럼 변수 옆에 :string 이렇게 타입 지정 그리고 ?:를 사용해 값이 없을때도 지정해 줌, return값의 타입은 함수이름과 옆에 :string 이렇게 사용
 - 함수 안에 있는 메서드의 타입은 `funcInfunc : (id: string, quantity?: number) => boolean;` => 뒤에 반환값 타입을 지정해줌
--  
+
+## Enum
+- `enum Size{ S, M, L, XL }` 이처럼 사용하며, 값을 주지 않으면 0부터 시작한다. `S = 'S'` 이렇게 값을 줄 수 있음
+=
