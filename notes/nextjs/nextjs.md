@@ -25,11 +25,21 @@ Hydration 이후, React reconciler API가 자리를 대체하고, 사이트는 �
 - `useRouter()`를 사용해 경로의 값 사용 및 페이지 이동
 - `const router = useRouter(); const { id } = router.query`// [id].js query에들어가는건 경로의 값 또는 파일의 이름
   > ex) `/items?q=blue` 라면 `const { q } = router.query` // q = blue
-- `router.push('/search')` 를 사용하면 /search 경로로 이
+- `router.push('/search')` 를 사용하면 /search 경로로 이동   
 <br>
 
 ## 리다이렉트
-- 리다이렉트 하기 위해서는 next.config.js 파일수정 -> next공식홈페이지에서 코드 가져다가 사용
+- 리다이렉트 하기 위해서는 next.config.js 파일수정 -> next공식홈페이지에서 코드 가져다가 사용   
+<br>
 
 ## 커스텀 404
-- pages에 404.js로 만들어
+- pages에 404.js로 만들어 줌   
+<br>
+
+## Head 태그
+- `<Head><title>사이트 제목</title></Head>` Head 태그 안에 title 안에 텍스트를 써주면 사이트 탭의 제목이 됨
+- `<Head><link rel="icon" href="경로"></link></Head>` Head 태그 안에 link 넣어주고 icon과 경로 정해주면 탭에 아이콘 삽입 가능   
+<br>
+
+## 프리렌더링
+- 
