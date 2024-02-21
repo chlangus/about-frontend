@@ -30,4 +30,6 @@ Hydration 이후, React reconciler API가 자리를 대체하고, 사이트는 �
 
 ## 리다이렉트
 - 리다이렉트 하기 위해서는 next.config.js 파일수정 -> next공식홈페이지에서 코드 가져다가 사용
-- 
+
+## 커스텀 404
+- pages에 404.js로 만들어
