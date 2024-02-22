@@ -44,7 +44,12 @@ Hydration 이후, React reconciler API가 자리를 대체하고, 사이트는 �
 ## 프리렌더링
 - 초기 로딩이 빨라짐, 검색엔진 최적화 가능
 - 정적생성: 빌드될때 미리 렌더링된 html및 css, js 제공
-- 서버사이드 렌더링: 클라이언트에서 리퀘스트를 보내면 서버에서 렌더링 한 다음 데이터 보내줌    
+- 서버사이드 렌더링: 클라이언트에서 리퀘스트를 보내면 서버에서 렌더링 한 다음 데이터 보내줌
+- `export function getStaticProps(){ ... return { props : {data} } }` getStaticProps로 정적 생성 가능하며 props로 데이터 내려줄수 있음 컴포넌트에서는 인자로 { data } 와 같이 props를 구조분해할당으로 받아 사용
+- 정적생성 함수는 훅 사용이 불가능하기때문에 파라미터로 context를 받아와서 context.params['id']로 다이나믹 페이지의 param을 가져올 수 있음
+- `export async function getStaticPaths() { return { paths: [{ params: {id: '1'} }, { params: {id: '2'} }], fallback: true } }` getStaticPaths로 다이나믹 페이지는 어떤 것을 정적생성해야하는지 경로를 알려주어야함, 그리고 fallback 의 설정을 true로 하여 경로를 정해주지 않은것도 렌더링 되게 설정 가능 false로하면 없는경로 렌더링 하지 않음
+- fallback의 설정을 true로 할때 정적생성 데이터가 없을 떄 보여줄 컴포넌트를 설정해주어야함 ex) `if(!data) return (<div>로딩시 화면 처리</div>)`
+- getServerSideProps를 사용해 서버사이드 렌더링 적용, 사용법은 정적생성과 비슷, 자주 바뀌는 부분까지 포함해서 렌더링을 하고싶다면 서버사이드 렌더링을 사용        
 <br>
 
 
