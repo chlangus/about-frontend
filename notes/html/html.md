@@ -1,6 +1,6 @@
 ## HTML
 + Hipertext Markup Language의 약자로 웹페이지의 기본 틀을 구성하는 역할
-+ 마크업 언
++ mark, tag로 둘러쌓인 언어 
 <br>
 
 ### 블록 레벨 요소
