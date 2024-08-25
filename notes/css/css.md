@@ -6,8 +6,20 @@
 + 명시도는 아이디 개수, 클래스 개수, 요소 개수를 순서대로 숫자를 나열해서 점수를 매김
 <br>
 
+## SCSS
++ CSS의 확장 버전
++ 변수, 중첩, 믹스인 기능 사용하여 좀 더 효율적으로 사용 가능 
+
+## box model이란?
++ 모든 HTML은 박스 모양으로 구성되며 이것을 box model이라 함 
++ content, border, border의 안쪽 여백인 padding, 바깥 여백 margin으로 이루어져 있
+
 ## box-sizing: border-box
-+ 크기의 값이 content, 패딩, 마진값의 합이 되게 해줌
++ 크기의 값이 content, padding, border의 합이 되게 해줌
+<br>
+
+## margin과 padding
++ box model에서 border 안쪽 여백은 padding, border 바깥 여백은 margin
 <br>
 
 ## 마진 상쇄
@@ -28,9 +40,17 @@
 + 1rem은 최상위 태그(html 태그)의 font-size   
 <br>
 
+## block
++ 가로영역을 모두 채움
++ width, height 속성 지정 가능
+  
 ## inline
-+ 크기가 존재하지 않음
-+ 인라인 속성이면서 크기를 설정하고 싶다면 display: inline-block 속성으로 설정
++ 줄바꿈이 되지 않음
++ width, height 지정 불가능
+<br>
+
+## inline-block
++ 줄바꿈이 되지 않지만, 크기 지정가능
 <br>
 
 ## %
@@ -38,7 +58,8 @@
 <br>
 
 ## float 속성
-+ 기존 구조에서 벗어나 원하는 곳에 배치 가능
++ 부모 요소를 기준으로 기존 구조에서 벗어나 원하는 곳에 배치 가능
++ 문서의 흐름에서 벗어나지 않아 다른 요소들에 영향을 미침 
 <br>
 
 ## letter-spacing, word-spacing
@@ -56,7 +77,7 @@
 + relative: static의 위치를 기준으로 움직임, 원래 위치는 비어져 있음
 + absolute: 포지셔닝된 가장 가까운 조상요소를 기준으로 움직임, 원래 위치에 자리를 차지하지 않음 inset:0은 top, right, bottom, left 모두 0으로 설정
 + fixed: 스크롤해도 지정한 위치에 고정, 원래 위치의 자리를 차지하지 않음, 크기 지정해줘야 함
-+ sticky: 원래 자리에 있다가 지정한 위치에 닿으면 fixed처럼 고정됨, 부모요소가 사라지면 사라짐, block요소
++ sticky: 부모 요소에 속해 원래 자리에 있다가 지정한 위치에 닿으면 fixed처럼 고정됨 
 <br>
 
 ## >(자식 결합자)와 ' '(자손결합자)
@@ -66,6 +87,7 @@
 <br>
 
 ## flex-box
++ 공간 배분과 정렬기능을 제공해주는 1차원 레이아웃 모델
 + display: flex;
 + 기본값: row 즉 가로로 겹겹이 쌓임
 + flex-direction: row, row-reverse, column, column-reverse
@@ -76,6 +98,7 @@
 <br>
 
 ## grid 
++ 2차원 레이아웃 모델 
 + grid-template-columns: 100px 300px 100px; : 각 컬럼의 너비
 + grid-template-rows: 200px 200px 100px : 각 row의 높이
 + repeat(3, minmax(200px, 300px)) 3번 200px에서 300px까지 늘어남
