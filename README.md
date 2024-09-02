@@ -1,2 +1,2 @@
-# frontend-note
+# note
 📝 메모장
