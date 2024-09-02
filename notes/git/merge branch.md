@@ -1,11 +1,11 @@
 ## branch merge
 git에서 branch merge를 하는 방법은 두가지가 있는데 그 방법은 아래와 같습니다. 
-> ffast-forward-merge   
+> fast-forward-merge   
 > 3-way-merge   
 <br>
 
 ### fast-forward merge
-+ 두개의 다른 브랜치가 공통된 base 커밋을 갖고 있고 하나의 브랜치만 커민을 하여 분기해 나간 상태에서 merge를 하면 이것을 fast-forward merge 라고 합니다.
++ 두개의 다른 브랜치가 공통된 base 커밋을 갖고 있고 하나의 브랜치만 커밋 하여 분기해 나간 상태에서 merge를 하면 이것을 fast-forward merge 라고 합니다.
 > 두개의 다른 브랜치가 공통된 base 커밋을 갖고 있고 둘 중 하나의 브랜치가 커밋을 하여 다른 커밋을 가르키고 있다고 가정을 하겠습니다.
 > 이 때 선행되는 브랜치를 대상으로 하여 머지를 하였을때 base 브랜치는 다른 갈래로 나아가고 있지 않고 선행된 브랜치의 과정중에 있기 때문에 따로 커밋을 만들지 않고 앞으로 나아가 가리키는 커밋만 이동을 하게 됩니다. 
 > 그래서 이것을 fast-forward merge라 하며 병합을 하지 않고 단순하게 커밋 이동한 것과 같은 결과를 냅니다.
