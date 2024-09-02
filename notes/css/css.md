@@ -12,7 +12,7 @@
 
 ## box model이란?
 + 모든 HTML은 박스 모양으로 구성되며 이것을 box model이라 함 
-+ content, border, border의 안쪽 여백인 padding, 바깥 여백 margin으로 이루어져 있
++ content, border, border의 안쪽 여백인 padding, 바깥 여백 margin으로 이루어져 있음
 
 ## box-sizing: border-box
 + 크기의 값이 content, padding, border의 합이 되게 해줌
@@ -24,6 +24,7 @@
 
 ## 마진 상쇄
 + 인접해있는 요소들끼리의 마진은 상쇄될 수 있음
++ inline 요소를 가져 마진상쇄가 일어나지 않는 inline-block을 사용해 마진 상쇄 해결
 <br>
 
 ## RGBA
