@@ -1,5 +1,6 @@
 ## HTML
 + Hipertext Markup Language의 약자로 웹페이지의 기본 틀을 구성하는 역할
++ 페이지의 뼈대를 구성하고, 이동이 가능하게 해주는 언어
 + mark, tag로 둘러쌓인 언어 
 <br>
 
